@@ -7,8 +7,149 @@
     <title>Car Rental | Admin</title>
 </head>
 
-<body>
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+        color: #212529;
+    }
 
+    .header {
+        background-color: #343a40;
+        color: #ffffff;
+        padding: 20px 0;
+    }
+
+    .header h1 {
+        margin: 0;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .header nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0;
+        text-align: center;
+    }
+
+    .header nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    .header nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .header nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .child-1, .child-2, .child-3 {
+        background-color: #ffffff;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .child-1 h2, .child-2 h2, .child-3 h2 {
+        margin-top: 0;
+        font-size: 1.5rem;
+        color: #343a40;
+    }
+
+    .child-1 p, .child-2 ul, .child-3 p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #495057;
+    }
+
+    .child-2 ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .child-2 ul li {
+        margin: 10px 0;
+    }
+
+    .child-2 ul li a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .child-2 ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .users-management a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    .users-management a:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>Car Rental Admin</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cars.html">Cars</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                    <li><a href="users.html">Users</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="child-1">
+        <div class="container">
+            <h2>Welcome to the Car Rental Admin Panel</h2>
+            <p>Manage your car rental business efficiently.</p>
+        </div>
+    </div>
+
+    <div class="child-2">
+        <div class="container">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="add-car.html">Add New Car</a></li>
+                <li><a href="view-bookings.html">View Bookings</a></li>
+                <li><a href="manage-users.html">Manage Users</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="child-3">
+        <div class="users-management">
+            <h2>Users Management</h2>
+            <p>View and manage users who have registered on the platform.</p>
+            <a href="manage-users.html">Manage Users</a>
+        </div>
+    </div>
 </body>
 
 </html>
